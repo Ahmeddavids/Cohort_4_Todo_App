@@ -156,7 +156,7 @@ exports.resendVerificationEmail = async (req, res) => {
         const mailOptions = {
             email: user.email,
             subject: "Email Verification",
-            html: `Please click on the link to verify your email: <a href="https://student-voting-app.onrender.com/api/users/verify-email/${token}">Verify Email</a>`,
+            html: `Please click on the link to verify your email: <a href="https://cohort-4-todo-app-cmzo.onrender.com/api/users/verify-email/${token}">Verify Email</a>`,
         };
 
         await sendEmail(mailOptions);
